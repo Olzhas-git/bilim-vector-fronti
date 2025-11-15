@@ -1,0 +1,169 @@
+.header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-section a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s;
+  filter: drop-shadow(0 2px 4px rgba(30, 126, 52, 0.2));
+}
+
+.logo-image:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(30, 126, 52, 0.3));
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #1e7e34;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: color 0.2s;
+  padding: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #1e7e34;
+}
+
+.sign-in-icon {
+  border-radius: 50%;
+}
+
+.sign-in-icon:hover {
+  background: rgba(30, 126, 52, 0.1);
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.language-selector:hover {
+  border-color: #1e7e34;
+  color: #1e7e34;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.icon-button:hover {
+  color: #1e7e34;
+}
+
+.main-nav {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav-link {
+  font-size: 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.main-nav-link:hover {
+  color: #1e7e34;
+}
+
+@media (max-width: 1024px) {
+  .top-nav {
+    display: none;
+  }
+  
+  .nav-content {
+    overflow-x: auto;
+    gap: 24px;
+  }
+}
+
